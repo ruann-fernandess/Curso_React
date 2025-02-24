@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld'
 
 function App() {
   const name = "Ruan"
@@ -13,6 +14,7 @@ function App() {
      <p>Olá, {name}</p>
      <p>Soma: 2 + 2 = {2+2}</p>
      <img src={url} alt="Minha imagem 150x150" />
+     <HelloWorld/>
      
     </div>
   );
