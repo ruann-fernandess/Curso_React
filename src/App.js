@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
   const name = "Ruan"
@@ -8,14 +10,10 @@ function App() {
 
   return (
     <div className="App">
-     <h1>Olá, Mundo!</h1>
-     <p>Meu primeiro app</p>
-     <h2>Alterando o JSX</h2>
-     <p>Olá, {name}</p>
-     <p>Soma: 2 + 2 = {2+2}</p>
-     <img src={url} alt="Minha imagem 150x150" />
-     <HelloWorld/>
-     
+     <SayMyName nome="Rafaella" />
+     <SayMyName nome="Alanzoka" />
+     <SayMyName nome={name} />
+     <Pessoa nome="Ruan" idade="20" profissao="programador" foto=""/>
     </div>
   );
 }
