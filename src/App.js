@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld'
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase'
+import List from './components/List'
 
 function App() {
   const name = "Ruan"
@@ -13,10 +14,11 @@ function App() {
     <div className="App">
       <Frase/>
       <Frase/>
-     <SayMyName nome="Rafaella" />
-     <SayMyName nome="Alanzoka" />
-     <SayMyName nome={name} />
-     <Pessoa nome="Ruan" idade="20" profissao="programador" foto=""/>
+      <SayMyName nome="Rafaella" />
+      <SayMyName nome="Alanzoka" />
+      <SayMyName nome={name} />
+      <Pessoa nome="Ruan" idade="20" profissao="programador" foto=""/>
+      <List/>
     </div>
   );
 }
