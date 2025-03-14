@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
 
 function App() {
-  const name = "Ruan"
-  const url = "https://via.placeholder.com/150"
+  const meusItens = ['React', 'Vue', 'Angular']
 
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
-      <Condicional/>  
+      <h1>Título da Aula</h1>
+      <OutraLista itens = {meusItens}/>
+      <OutraLista itens = {""}/>
     </div>
   );
 }
