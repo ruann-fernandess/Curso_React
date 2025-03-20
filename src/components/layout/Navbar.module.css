@@ -1,7 +1,7 @@
-.lis{
+.list{
     display: flex;
     list-style: none;
-
+    
 }
 
 .item{
